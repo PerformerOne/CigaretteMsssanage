@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_marker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_15_sp"
+        android:textColor="@color/t201D1C"/>
+    
+    <ImageView
+        android:layout_width="@dimen/margin_25_dp"
+        android:layout_height="@dimen/margin_30_dp"
+        android:src="@mipmap/icon_map_g_b"
+        android:scaleType="fitXY"/>
+</LinearLayout>

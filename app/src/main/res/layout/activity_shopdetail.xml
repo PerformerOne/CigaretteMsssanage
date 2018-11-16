@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shopDetail_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16_dp"
+            android:text="01"
+            android:textColor="#FB7A2D"
+            android:textSize="@dimen/text_30_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_shopDetail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_15_dp"
+            android:text="顾艳霞-(顾艳霞)长垣县元润副食店"
+            android:textColor="#201D1C"
+            android:textSize="@dimen/text_15_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_10_dp"
+        android:layout_marginRight="@dimen/margin_10_dp"
+        android:layout_marginBottom="@dimen/margin_10_dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10_dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/margin_15_dp"
+            android:layout_height="@dimen/margin_15_dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_15_dp"
+            android:src="@mipmap/list" />
+
+        <TextView
+            android:id="@+id/tv_shopDetail_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_6_dp"
+            android:text="商户编号:410728105969"
+            android:textColor="#201D1C"
+            android:textSize="@dimen/text_15_sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15_dp">
+
+        <ImageView
+            android:layout_width="@dimen/margin_15_dp"
+            android:layout_height="@dimen/margin_15_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15_dp"
+            android:src="@mipmap/phone" />
+
+        <TextView
+            android:id="@+id/tv_shopDetail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_36_dp"
+            android:text="电话:18291803015"
+            android:textColor="#201D1C"
+            android:textSize="@dimen/text_15_sp" />
+
+        <ImageView
+            android:layout_width="@dimen/margin_15_dp"
+            android:layout_height="@dimen/margin_15_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_219_dp"
+            android:src="@mipmap/person" />
+
+
+        <TextView
+            android:id="@+id/tv_shopDetail_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_239_dp"
+            android:text="负责人:顾艳霞"
+            android:textColor="#201D1C"
+            android:textSize="@dimen/text_15_sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_15_dp">
+        <ImageView
+            android:layout_width="@dimen/margin_15_dp"
+            android:layout_height="@dimen/margin_15_dp"
+            android:layout_marginLeft="@dimen/margin_15_dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/loc" />
+        <TextView
+            android:id="@+id/tv_shopDetail_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河南省新乡市长垣县樊相镇213省道西125室"
+            android:textColor="#201D1C"
+            android:textSize="@dimen/text_15_sp"
+            android:layout_marginLeft="@dimen/margin_6_dp"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10_dp"
+        android:background="#F5F5F5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10_dp">
+            
+            <ImageView
+                android:layout_width="@dimen/margin_15_dp"
+                android:layout_height="@dimen/margin_15_dp"
+                android:layout_marginLeft="@dimen/margin_15_dp"
+                android:src="@mipmap/icon_order_pic"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_36_dp"
+                android:text="门店照片"
+                android:textColor="#201D1C"
+                android:textSize="@dimen/text_15_sp" />
+
+            <TextView
+                android:id="@+id/tv_shopDetail_deletePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="清除照片"
+                android:layout_marginRight="@dimen/margin_15_dp"
+                android:textColor="#F87E3D"
+                android:textSize="@dimen/text_15_sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_shopDetail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20_dp"
+            android:layout_marginRight="@dimen/margin_70_dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10_dp"
+        android:background="#F5F5F5"/>
+
+    <TextView
+        android:id="@+id/tv_shopDetail_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40_dp"
+        android:gravity="center"
+        android:text="提 交"
+        android:textSize="@dimen/text_18_sp"
+        android:textColor="#F87E3D"
+        android:background="#FFFFFF"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"/>
+
+</LinearLayout>

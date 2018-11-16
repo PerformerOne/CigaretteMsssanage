@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_error_choose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="111"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:gravity="center_horizontal|center_vertical"
+    android:textColor="@color/tFFE8B2"
+    android:textSize="@dimen/text_15_sp"
+    android:background="@drawable/bg_error_unselect"/>

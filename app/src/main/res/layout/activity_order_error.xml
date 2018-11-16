@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tfff5f5f5">
+
+    <include layout="@layout/include_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tfff5f5f5">
+
+        <EditText
+            android:id="@+id/et_user_search"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:paddingLeft="@dimen/margin_15_dp"
+            android:paddingRight="@dimen/margin_15_dp"
+            android:drawableLeft="@mipmap/icon_user_search"
+            android:drawableRight="@mipmap/icon_user_scan"
+            android:background="@drawable/shape_user_search"
+            android:layout_marginLeft="@dimen/margin_10_dp"
+            android:layout_marginRight="@dimen/margin_10_dp"
+            android:hint="请输入商户编号或订单编号"
+            android:textColorHint="@color/tB2B2B2"
+            android:textColor="@color/tB2B2B2"
+            android:drawablePadding="@dimen/margin_6_dp"
+            android:textSize="@dimen/text_15_sp"/>
+    </LinearLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#00000000"
+        app:srlPrimaryColor="#00000000"
+        app:srlEnablePreviewInEditMode="true">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_order_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tffffff">
+
+    <include layout="@layout/include_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15_dp"
+                android:text="1.请选择异常原因"
+                android:textSize="@dimen/text_18_sp"
+                android:textColor="@color/t201D1C"
+                android:includeFontPadding="false"/>
+
+            <com.hupo.cigarette.widget.flowtagView.FlowTagView
+                android:id="@+id/fl_error_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_14_dp"
+                android:layout_marginTop="@dimen/margin_15_dp"
+                app:lineSpacing="10dp"
+                app:tagSpacing="10dp" />
+
+            <EditText
+                android:id="@+id/et_custom_resaon"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/margin_30_dp"
+                android:textColor="@color/t201D1C"
+                android:textSize="@dimen/text_15_sp"
+                android:layout_marginTop="@dimen/padding_20"
+                android:layout_marginLeft="@dimen/margin_14_dp"
+                android:paddingLeft="@dimen/margin_16_dp"
+                android:hint="其他原因......"
+                android:textColorHint="@color/tEEEEEE"
+                android:background="@drawable/bg_edittext_gray"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20_dp"
+                android:text="2.请选择异常照片"
+                android:textSize="@dimen/text_18_sp"
+                android:textColor="@color/t201D1C"
+                android:includeFontPadding="false"/>
+
+            <com.hupo.cigarette.widget.MyGridView
+                android:id="@+id/gd_error_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:layout_marginTop="@dimen/margin_18_dp"
+                android:layout_marginBottom="@dimen/margin_20_dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <TextView
+                android:id="@+id/tv_error_confirm"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_height="30dp"
+                android:text="提  交"
+                android:textColor="@color/tffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_30_dp"
+                android:textSize="@dimen/text_15_sp"
+                android:background="@drawable/bg_error_select"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

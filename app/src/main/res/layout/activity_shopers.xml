@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tfff5f5f5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_user_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_15_dp"
+            android:layout_marginLeft="@dimen/margin_15_dp">
+
+            <ImageView
+                android:id="@+id/iv_shopers_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingLeft="@dimen/padding_10"
+                android:src="@mipmap/icon_user_search"/>
+            <EditText
+                android:id="@+id/et_shopers_search"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@null"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:hint="输入你要查询的商户编号"
+                android:textColorHint="@color/tB2B2B2"
+                android:textColor="@color/tB2B2B2"
+                android:drawablePadding="@dimen/margin_6_dp"
+                android:textSize="@dimen/text_15_sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fdfdfe">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:layout_marginLeft="@dimen/margin_22_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_17_sp"
+                android:textColor="#201D1C"
+                android:text="线路名称："/>
+
+            <TextView
+                android:id="@+id/tv_shopers_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_17_sp"
+                android:textColor="#201D1C"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_9_dp"
+            android:layout_marginLeft="@dimen/margin_10_dp"
+            android:layout_marginRight="@dimen/margin_10_dp"
+            android:background="@color/tEEEEEE"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15_dp"
+            android:layout_marginBottom="@dimen/margin_16_dp">
+
+            <ImageView
+                android:layout_width="@dimen/margin_15_dp"
+                android:layout_height="@dimen/margin_15_dp"
+                android:layout_marginLeft="@dimen/margin_20_dp"
+                android:src="@mipmap/shop"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_shopers_shops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15_sp"
+                android:textColor="#201D1C"
+                android:layout_marginLeft="@dimen/margin_40_dp"
+                android:gravity="center"
+                android:text="商户数：1780"/>
+
+            <ImageView
+                android:layout_width="@dimen/margin_15_dp"
+                android:layout_height="@dimen/margin_15_dp"
+                android:layout_marginLeft="@dimen/margin_211_dp"
+                android:src="@mipmap/locshop"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_shopers_locshops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15_sp"
+                android:textColor="#201D1C"
+                android:layout_marginLeft="@dimen/margin_231_dp"
+                android:gravity="center"
+                android:text="有坐标商户数：70"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10_dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_shoper_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tfff5f5f5">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_7_dp"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_20_dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_mess_user"
+            android:scaleType="fitXY"/>
+
+        
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="@dimen/margin_5_dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_mess_l">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_5_dp"
+                    android:paddingRight="@dimen/margin_5_dp"
+                    android:text="张思将领货单(XXX000118/S12-A)转单给您"
+                    android:lineSpacingExtra="@dimen/margin_3_dp"
+                    android:textSize="@dimen/text_15_sp"
+                    android:textColor="@color/t201D1C"
+                    android:includeFontPadding="false" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_mess_button_o"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="同意"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/tffffff"
+                    android:textSize="@dimen/text_15_sp"
+                    android:includeFontPadding="false"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_3_dp"
+                    android:layout_marginBottom="@dimen/margin_3_dp"
+                    android:background="@color/tffffff"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="拒绝"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/tffffff"
+                    android:textSize="@dimen/text_15_sp"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_7_dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="96dp"
+            android:gravity="right">
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_5_dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_mess_r">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/margin_5_dp"
+                        android:paddingRight="@dimen/margin_5_dp"
+                        android:text="张思将领货单(XXX000118/S12-A)转单给您"
+                        android:lineSpacingExtra="@dimen/margin_3_dp"
+                        android:textSize="@dimen/text_15_sp"
+                        android:textColor="@color/t201D1C"
+                        android:includeFontPadding="false"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/bg_mess_button_g"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="同意"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/tffffff"
+                        android:textSize="@dimen/text_15_sp"
+                        android:includeFontPadding="false"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_3_dp"
+                        android:layout_marginBottom="@dimen/margin_3_dp"
+                        android:background="@color/tffffff"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="拒绝"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/tffffff"
+                        android:textSize="@dimen/text_15_sp"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/margin_20_dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_mess_user"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您同意了李志的转单！"
+        android:textSize="@dimen/text_13_sp"
+        android:textColor="@color/tC9C9C9"
+        android:includeFontPadding="false"
+        android:drawablePadding="@dimen/margin_3_dp"
+        android:layout_marginTop="@dimen/margin_7_dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/icon_mess_confirm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您拒绝了李志的转单！"
+        android:textSize="@dimen/text_13_sp"
+        android:textColor="@color/tC9C9C9"
+        android:includeFontPadding="false"
+        android:drawablePadding="@dimen/margin_3_dp"
+        android:layout_marginTop="@dimen/margin_7_dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/icon_mess_refuse"/>
+
+
+</LinearLayout>

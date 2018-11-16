@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tfff5f5f5">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tfff5f5f5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_user_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_15_dp"
+            android:layout_marginLeft="@dimen/margin_15_dp">
+
+            <EditText
+                android:id="@+id/et_areas_search"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@null"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:drawableLeft="@mipmap/icon_user_search"
+                android:hint=" 输入你要查询的订单编号"
+                android:paddingLeft="@dimen/padding_10"
+                android:textColorHint="@color/tB2B2B2"
+                android:textColor="@color/tB2B2B2"
+                android:drawablePadding="@dimen/margin_6_dp"
+                android:textSize="@dimen/text_15_sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_area_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

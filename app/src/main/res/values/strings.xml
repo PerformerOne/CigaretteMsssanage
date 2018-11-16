@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CigaretteManage</string>
+    <string name="connect_error">网络连接失败,请检查网络</string>
+    <string name="connect_timeout">连接超时,请稍后再试</string>
+    <string name="bad_network">服务器异常</string>
+    <string name="parse_error">解析服务器响应数据失败</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="response_return_error">服务器返回数据失败</string>
+
+    <string name="folder_all">所有图片</string>
+    <string name="photo_unit">拍摄</string>
+    <string name="error_no_permission">没有许可</string>
+    <string name="msg_no_camera">没有找到系统的相机</string>
+    <string name="error_image_not_exist">图片错误</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+
+    <string name="sys_exit">再按一次退出程序</string>
+
+    <string name="title_user">通讯录</string>
+    <string name="title_message">消息</string>
+    <string name="title_bound_vehicles">绑定车辆</string>
+    <string name="title_aboard">上车</string>
+    <string name="title_merchant_split">商户列表</string>
+    <string name="title_prepare">准备配送</string>
+    <string name="title_send">配送</string>
+    <string name="title_error">异常</string>
+    <string name="title_order_detail">订单详情</string>
+    <string name="title_map">地图</string>
+    <string name="title_shopDetail">商户详情</string>
+    <string name="title_return_journey">导航</string>
+    <string name="title_user_setting">个人设置</string>
+    <string name="title_distribution">配送单</string>
+    <string name="title_bill_goods">领货单</string>
+    <string name="title_order_error">异常订单</string>
+    <string name="title_shoper">商户</string>
+    <string name="title_area">区域</string>
+    <string name="title_line">线路</string>
+    <string name="upd_msg"> %1$s:%2$d,%3$s,%4$s,%5$s,%6$s,%7$s,%8$s,%9$s,%10$s,%11$s,%12$s,%13$s,,:,,%14$s</string>
+</resources>

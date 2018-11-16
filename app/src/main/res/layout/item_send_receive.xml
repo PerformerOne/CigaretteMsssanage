@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10_dp"
+    android:background="@color/tffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15_dp"
+        android:layout_marginBottom="@dimen/margin_15_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_send_rno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单号/线路:XX00011880/S42-A"
+            android:textSize="@dimen/text_17_sp"
+            android:textColor="@color/t201D1C"
+            android:paddingLeft="@dimen/margin_15_dp"
+            android:drawablePadding="@dimen/margin_6_dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:drawableLeft="@mipmap/icon_aboard_order"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/tEEEEEE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_13_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_send_road"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="线路:S42-A"
+            android:textColor="@color/t201D1C"
+            android:textSize="@dimen/text_13_sp"
+            android:drawableLeft="@mipmap/icon_aboard_route"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/margin_15_dp"/>
+
+        <TextView
+            android:id="@+id/tv_send_rnum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="50户/1971条/125包"
+            android:textColor="@color/t201D1C"
+            android:textSize="@dimen/text_13_sp"
+            android:drawableLeft="@mipmap/icon_aboard_info"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/margin_15_dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_13_dp"
+        android:layout_marginBottom="@dimen/margin_10_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_send_rarea"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="区域:长恒配送区"
+            android:textColor="@color/t201D1C"
+            android:textSize="@dimen/text_13_sp"
+            android:drawableLeft="@mipmap/icon_aboard_area"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/margin_15_dp"/>
+
+        <TextView
+            android:id="@+id/tv_send_rtime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="业务日期:2018-01-26"
+            android:textColor="@color/t201D1C"
+            android:textSize="@dimen/text_13_sp"
+            android:drawableLeft="@mipmap/icon_aboard_date"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/margin_15_dp"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/tEEEEEE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_6_dp"
+        android:layout_marginBottom="@dimen/margin_6_dp"
+        android:layout_marginLeft="@dimen/margin_15_dp"
+        android:layout_marginRight="@dimen/margin_15_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_receive_map"
+            android:layout_width="@dimen/margin_70_dp"
+            android:layout_height="@dimen/margin_24_dp"
+            android:text="地图"
+            android:gravity="center"
+            android:textColor="@color/tFFB33B"
+            android:textSize="@dimen/text_14_sp"
+            android:background="@drawable/bg_button_yellow"/>
+
+        <TextView
+            android:id="@+id/tv_receive_detail"
+            android:layout_width="@dimen/margin_70_dp"
+            android:layout_height="@dimen/margin_24_dp"
+            android:text="详情"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_10_dp"
+            android:textColor="@color/tFFB33B"
+            android:textSize="@dimen/text_14_sp"
+            android:background="@drawable/bg_button_yellow"/>
+    </LinearLayout>
+
+
+</LinearLayout>

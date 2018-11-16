@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tfff5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10_dp"
+        android:background="@color/tffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10_dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_shop_img"
+                android:layout_width="@dimen/margin_60_dp"
+                android:layout_height="@dimen/margin_50_dp"
+                android:src="@mipmap/icon_merchant_img"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15_dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_3_dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_shop_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01"
+                        android:textSize="25sp"
+                        android:textColor="@color/tF87E3D"
+                        android:includeFontPadding="false"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="顾艳霞-(顾艳霞)长垣县元润副食店"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/text_15_sp"
+                        android:textColor="@color/t201D1C"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tEEEEEE"/>
+
+                <TextView
+                    android:id="@+id/tv_shop_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:layout_marginTop="@dimen/margin_5_dp"
+                    android:drawableLeft="@mipmap/icon_merchant_info"
+                    android:drawablePadding="@dimen/margin_6_dp"
+                    android:textSize="@dimen/text_15_sp"
+                    android:textColor="@color/t201D1C"
+                    android:includeFontPadding="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_7_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_sno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="410728105969"
+                android:textColor="@color/t201D1C"
+                android:textSize="@dimen/text_13_sp"
+                android:drawableLeft="@mipmap/icon_error_no"
+                android:drawablePadding="5dp"
+                android:paddingLeft="@dimen/margin_15_dp"/>
+
+            <TextView
+                android:id="@+id/tv_shop_manager"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="顾艳霞"
+                android:textColor="@color/t201D1C"
+                android:textSize="@dimen/text_13_sp"
+                android:drawableLeft="@mipmap/icon_error_name"
+                android:drawablePadding="5dp"
+                android:paddingLeft="@dimen/margin_15_dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_13_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="18291803015"
+                android:textColor="@color/t201D1C"
+                android:textSize="@dimen/text_13_sp"
+                android:drawableLeft="@mipmap/icon_error_phone"
+                android:drawablePadding="5dp"
+                android:paddingLeft="@dimen/margin_15_dp"/>
+
+            <TextView
+                android:id="@+id/tv_shop_num"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="15条/2包"
+                android:textColor="@color/t201D1C"
+                android:textSize="@dimen/text_13_sp"
+                android:drawableLeft="@mipmap/icon_error_info"
+                android:drawablePadding="5dp"
+                android:paddingLeft="@dimen/margin_15_dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_shop_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="河南省新乡市长垣县樊相镇留连社区213省道西125室"
+            android:layout_marginTop="@dimen/margin_13_dp"
+            android:layout_marginBottom="@dimen/margin_17_dp"
+            android:textColor="@color/t201D1C"
+            android:textSize="@dimen/text_13_sp"
+            android:drawableLeft="@mipmap/icon_error_area"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/margin_15_dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

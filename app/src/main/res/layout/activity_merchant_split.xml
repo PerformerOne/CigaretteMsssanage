@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tfff5f5f5">
+
+    <include layout="@layout/include_title"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_user_search"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_15_dp"
+                    android:layout_marginLeft="@dimen/margin_15_dp">
+
+                    <ImageView
+                        android:id="@+id/iv_bound_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:src="@mipmap/icon_user_search"/>
+                    <EditText
+                        android:id="@+id/et_bound_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:drawableRight="@mipmap/icon_user_scan"
+                        android:background="@null"
+                        android:layout_marginRight="@dimen/margin_10_dp"
+                        android:hint="输入你要查询的订单号或商户名称"
+                        android:textColorHint="@color/tB2B2B2"
+                        android:textColor="@color/tB2B2B2"
+                        android:drawablePadding="@dimen/margin_6_dp"
+                        android:textSize="@dimen/text_15_sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlAccentColor="#00000000"
+                app:srlPrimaryColor="#00000000"
+                app:srlEnablePreviewInEditMode="true">
+                <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_merchant_split"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tF87E3D"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_merchant_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="完 成 拆 分"
+            android:gravity="center"
+            android:textColor="@color/tffffff"
+            android:textSize="@dimen/text_20_sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
